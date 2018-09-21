@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerlinuxtest:
+    image: ${DOCKER_REGISTRY}dockerlinuxtest
+    build:
+      context: .
+      dockerfile: DockerLinuxTest/Dockerfile
